@@ -8,9 +8,9 @@ To install:
 3. In Unity, open `Window -> DefineInspector`
 4. Use [this gif](https://i.imgur.com/4mCXwtw.gif) as a demo on how to use
 
-Author: Hayden Lee <haydenjameslee@gmail.com>
+Author: Hayden Lee <https://haydenlee.io>
 
-Source: https://github.com/haydenjameslee/unitydefineinspector
+Source: https://github.com/haydenjameslee/unity-define-inspector
 
 Version: 1.0.0
 
