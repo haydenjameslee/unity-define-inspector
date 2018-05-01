@@ -7,7 +7,7 @@ A Unity inspector panel to quickly add and remove a set of custom defined [Scrip
 
 ### Instructions
 1. Navigate to the `Assets/` folder in your Unity project
-2. `git clone https://github.com/haydenjameslee/unitydefineinspector.git`
+2. `git clone https://github.com/haydenjameslee/unity-define-inspector.git`
 3. In Unity, open `Window -> DefineInspector`
 4. Use [this gif](https://i.imgur.com/4mCXwtw.gif) as a demo on how to use
 
