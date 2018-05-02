@@ -22,3 +22,5 @@ Version: 1.0.0
 License: MIT
 
 Preview: https://imgur.com/a/SjY0imi
+
+Tested on: Unity 5.6.1f1
