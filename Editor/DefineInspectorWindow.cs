@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
@@ -27,6 +28,7 @@ public class DefineInspectorWindow : EditorWindow
         if (!_hasReadSymbols) {
             _pathToFile = Path.Combine(Application.dataPath, _filename);
             _defineSymbols = ParseFileToPairs(_pathToFile);
+            SortDefineSymbols();
             _hasReadSymbols = true;
         }
     }
@@ -45,6 +47,10 @@ public class DefineInspectorWindow : EditorWindow
             }
         }
         return pairs;
+    }
+
+    private static void SortDefineSymbols() {
+        _defineSymbols = _defineSymbols.OrderBy(o=>o.defineSymbol).ToList();
     }
 
     private void OnGUI() {
