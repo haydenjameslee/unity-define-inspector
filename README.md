@@ -17,7 +17,7 @@ Author: Hayden Lee <https://haydenlee.io>
 
 Source: https://github.com/haydenjameslee/unity-define-inspector
 
-Version: 1.0.0
+Version: 1.1.0
 
 License: MIT
 
