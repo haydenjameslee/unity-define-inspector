@@ -61,16 +61,14 @@ public class DefineInspectorWindow : EditorWindow
         var definesToDelete = new List<int>();
         foreach (DefinePair pair in _defineSymbols) {
             GUILayout.BeginHorizontal();
-            GUILayout.Label(pair.defineSymbol);
-            bool newOn = EditorGUILayout.Toggle("", pair.on);
+            GUILayout.Label(pair.defineSymbol, GUILayout.Width(200));
+            bool newOn = EditorGUILayout.Toggle("", pair.on, GUILayout.MinWidth(30));
             if (newOn != pair.on) {
                 pair.on = newOn;
                 UpdatePairInFile(pair);
             }
 
-            var btn = GUI.skin.button;
-            btn.fixedWidth = 100;
-            if (GUILayout.Button("Delete", btn)) {
+            if (GUILayout.Button("Delete", GUILayout.Width(100))) {
                 definesToDelete.Add(i);
             }
             GUILayout.EndHorizontal();
@@ -84,7 +82,7 @@ public class DefineInspectorWindow : EditorWindow
 
         GUILayout.BeginHorizontal();
         _newDefine = GUILayout.TextField(_newDefine);
-        if (GUILayout.Button("Add New") && !string.IsNullOrEmpty(_newDefine)) {
+        if (GUILayout.Button("Add New", GUILayout.Width(100)) && !string.IsNullOrEmpty(_newDefine)) {
             var newPair = new DefinePair {
                 defineSymbol = _newDefine,
                 on = false,
